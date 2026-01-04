@@ -175,3 +175,18 @@ word-break: keep-all;
 .navbar .nav-links li a:hover {
   color: #d9fbe5;  
 }
+
+.pagina {
+  display: none;
+  min-height: 100vh;
+  padding: 6rem 3rem;
+  background: #f4fdf8;
+}
+
+.pagina.activa {
+  display: block;
+}
+
+.hero.oculto {
+  display: none;
+}
