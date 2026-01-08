@@ -11,13 +11,15 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Angkor&family=Anton&family=DM+Serif+Text:ital@0;1&family=Noto+Serif+JP:wght@200..900&family=Oswald:wght@200..700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="index.css">
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&display=swap" rel="stylesheet">
+
 </head>
 <body>
      <nav class="navbar">
     <div class="logo">CODEXIA</div>
     <ul class="nav-links">
       <li><a href="#inicio">Inicio</a></li>
-      <li><a href="#servicios">Quienes somos?</a></li>
+      <li><a href="#informacion">Quienes somos?</a></li>
       <li><a href="#portfolio">Proyectos</a></li>
       <li><a href="#contacto">Contactanos</a></li>
     </ul>
@@ -35,21 +37,63 @@
   </div>
 </header>
 <main>
-  <section id="servicios" class="pagina activa">
-    <h2>Quiénes somos?</h2>
-    <p>Codexia es una empresa digital creada por dos desarrolladoras web apasionadas por la tecnología con el objetivo de crear sitios modernos, funcionales y creativos. <br>
-      Nos enfocamos en el diseño y programación web, combinando creatividad, buenas prácticas y atención al detalle para ofrecer soluciones claras y eficientes. <br>
-      Creemos en el aprendizaje continuo, la mejora constante y el trabajo en equipo como base para crecer profesionalmente y brindarle valor a cada proyecto. <br>
-      Nuestro compromiso es transformar ideas en experiencias digitales simples, atractivas y bien estructuradas.</p>
+  <section id="informacion" class="pagina">
+    
+    <div class="titulo">  
+    <h2>Quiénes somos?</h2></div><br><br><div class="contenedor">
+    <p>Somos una empresa digital creada por dos desarrolladoras web apasionadas por la tecnología con el objetivo de crear sitios modernos, funcionales y estéticos. 
+Nos enfocamos en el diseño y programación web, combinando creatividad, buenas prácticas y atención al detalle para ofrecer soluciones claras y eficientes. 
+Creemos en el aprendizaje continuo y en el trabajo en equipo como base para crecer profesionalmente y brindar el valor correspondiente a cada proyecto. 
+Nuestro compromiso es transformar ideas en experiencias digitales simples, atractivas y bien estructuradas.
+</p></div><br><br>
+<div class="tarjetas">
+<div class="tarjeta">
+ <div class="tarjeta-foto"><img src="sheila.jpeg" alt="Sheila Martinez">
+  </div> <div class="tarjeta-nombre"><h2>Sheila Martinez</h2>
+  </div>
+    <div class="tarjeta-descripcion"><p>Desarrolladora Web</p></div>
+    <div class="tarjeta-link"> <a href="portafolio.com" target="_blank">Ver portafolio > </a></div>
+</div>
+<div class="tarjeta">
+   <div class="tarjeta-foto">
+    <img src="loana.jpg.png" alt="loana foto"></div>
+    <div class="tarjeta-nombre"> <h2>Loana Leguizamón</h2>
+  </div> 
+  <div class="tarjeta-descripcion"><p>Desarrolladora Web</p></div>
+  <div class="tarjeta-link"> <a href="portafolio.com" target="_blank">Ver portafolio > </a></div>
+</div>
+</div>
+
   </section>
   <section id="portfolio" class="pagina">
     <h2>Proyectos</h2>
   </section>
-  <section id="contacto" class="pagina">
-    <h2>Contacto</h2>
+  <section id="contacto" class="pagina contacto">
+    <p class="contacto-text">
+      ¿Tenés una idea o proyecto en mente? Escribinos y te respondemos a la brevedad.
+    </p>
+    <form class="contacto-form">
+      <h2><i class="fa-regular fa-message"></i>📩 Contactanos</h2>
+      <div class="campo">
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" placeholder="Ingresa tu nombre aquí..." required>
+      </div>
+
+      <div class="campo">
+        <label for="email">Email:</label>
+        <input type="email" id="email" placeholder="ejemplo@ejemplo.com" required>
+      </div>
+
+      <div class="campo">
+        <label for="mensaje">Mensaje:</label>
+        <textarea id="mensaje" rows="5" placeholder="Ingresa tu mensaje aquí..." required></textarea>
+      </div>
+
+      <button type="submit" class="btn-enviar">Enviar</button>
+    </form>
   </section>
 </main>
-
 <script src="index.js"></script>
 </body>
 </html>
+
